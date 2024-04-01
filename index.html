@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main navigation container -->
+    <nav class="fixed flex w-full z-50 flex-nowrap items-center justify-between py-2 text-white hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+        data-twe-navbar-ref>
+        <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="ms-2">
+                <a class="text-xl text-black dark:text-white" href="#">Fanta</a>
+            </div>
+            <!-- Hamburger button for mobile view -->
+            <button
+                class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                type="button" data-twe-collapse-init data-twe-target="#navbarSupportedContent2"
+                aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Hamburger icon -->
+                <span class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </span>
+            </button>
+
+            <!-- Collapsible navbar container -->
+            <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+                id="navbarSupportedContent2" data-twe-collapse-item>
+                <!-- Left links -->
+                <ul class="list-style-none ms-auto flex flex-col ps-0 lg:mt-1 lg:flex-row" data-twe-navbar-nav-ref>
+                    <li class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2" data-twe-nav-item-ref>
+                        <a class="text-black dark:text-white lg:px-2" aria-current="page" href="#"
+                            data-twe-nav-link-ref>Home</a>
+                    </li>
+                    <li class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
+                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="#" data-twe-nav-link-ref>Products</a>
+                    </li>
+                    <li class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
+                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="#" data-twe-nav-link-ref>Shop</a>
+                    </li>
+                    <li class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0" data-twe-nav-item-ref>
+                        <a class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                            href="#" data-twe-nav-link-ref>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="section-1" class="bg-primary flex justify-center items-center pointer-events-none select-none">
+            <div class="relative w-full flex justify-center items-center">
+                <h1
+                    class="uppercase text-[6rem] sm:text-[12rem] md:text-[15rem] tracking-widest lg:text-[18rem] text-white text-center">
+                    fanta
+                </h1>
+                <div class="absolute h-full w-1/2 flex justify-center items-center">
+                    <img src="Assets/fanta.png" id="fanta" class="absolute z-20 max-sm:w-[240px] w-[480px]" alt="fanta">
+                    <img src="Assets/orange2.png" id="orange-cut"
+                        class="absolute left-[10%] -top-[12%] z-1 max-sm:w-[120px] w-[240px]" alt="orange-cut">
+                    <img src="Assets/orange.webp" id="orange"
+                        class="absolute left-[50%] -bottom-[15%] max-sm:-bottom-[40%] z-30 max-sm:w-[120px] w-[240px]"
+                        alt="orange">
+                </div>
+                <img src="Assets/leaf.webp" id="leaf1"
+                    class="absolute -left-[5%] -top-[40%] lg:top-0 lg:left-0 rotate-45 z-1 max-sm:w-[120px] w-[240px]"
+                    alt="leaf">
+                <img src="Assets/leaf2.png" id="leaf2"
+                    class="absolute right-[5%] -bottom-[20%] max-lg:-bottom-[50%] max-sm:-bottom-[150%] -rotate-90 max-sm:w-[120px] w-[180px]"
+                    alt="leaf2">
+                <img src="Assets/coconoutleaf.png" class="absolute right-0 top-0" alt="coconut-leaf">
+            </div>
+        </section>
+
+        <section id="section-2" class="bg-secondary flex items-center h-[100vh]">
+            <div
+                class="container mx-auto grid grid-cols-2 max-md:grid-cols-1 max-md:gap-y-5 py-5 h-full text-white select-none">
+                <div class="flex items-end justify-center  max-md:min-h-[50vh]">
+                    <svg class="h-[15rem]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#e04428"
+                            d="M41.5,-59.5C49.8,-51.1,49.7,-33.6,50.7,-19.2C51.7,-4.7,53.8,6.7,52.4,18.9C51.1,31.1,46.3,44.1,36.9,52.9C27.6,61.8,13.8,66.5,-2.5,70C-18.8,73.4,-37.7,75.6,-52.5,68.5C-67.3,61.5,-78.2,45.2,-84.5,27.1C-90.9,9,-92.7,-10.8,-80.5,-19.3C-68.3,-27.8,-42.1,-24.8,-26.3,-30.8C-10.6,-36.8,-5.3,-51.7,5.7,-59.5C16.6,-67.3,33.2,-68,41.5,-59.5Z"
+                            transform="translate(100 100)"></path>
+                    </svg>
+                </div>
+                <div class="flex flex-col justify-center gap-y-8  z-30">
+                    <h2 class="text-7xl font-extrabold">Flavour Updated</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maiores aspernatur neque
+                        ipsam nihil omnis distinctio rem magnam aut sint, excepturi quo laboriosam est nesciunt soluta
+                        iusto, similique veritatis? Reiciendis nemo eius sint quas earum rerum voluptatum iusto quam
+                        molestias, neque autem dolore, qui voluptate tempore doloremque voluptas facilis! Soluta sunt
+                        reprehenderit quas reiciendis sint. Ex qui similique itaque reiciendis exercitationem cupiditate
+                        dolores rerum laborum architecto asperiores voluptas deleniti ipsa expedita soluta non error
+                        enim, iusto, maiores molestiae, perspiciatis alias excepturi minus aut officia. Nobis sed
+                        molestiae laudantium saepe, vel atque perspiciatis quidem repudiandae voluptatibus quasi.
+                        Adipisci molestiae quibusdam culpa!</p>
+                </div>
+            </div>
+        </section>
+        <section id="section-3" class="h-screen bg-primary">
+            <div class="container mx-auto h-full">
+                <div class="grid grid-cols-3 h-full items-center justify-center gap-x-14">
+                    <div class="card relative bg-white h-[450px] rounded-2xl">
+                        <div class="content h-full py-10 flex flex-col justify-end items-center gap-y-4">
+                            <h3 class="text-4xl font-extrabold">CocaCola</h3>
+                            <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
+                                class="inline-block rounded-lg font-bold bg-warning px-6 pb-2 pt-2.5 text-xs uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30  ">
+                                BuyNow
+                            </button>
+                        </div>
+                        <img src="Assets/cocacola.png" id="coca" class="absolute -translate-x-[50%] -translate-y-[50%] top-[26%] left-[50%] z-20 max-sm:w-[240px] w-[200px]"
+                            alt="coca">
+                        <img src="Assets/orange2.png" id="orange-cut-coca" class="absolute -translate-x-[50%] -translate-y-[50%] top-[6%] left-[50%] max-sm:w-[120px] w-[240px]"
+                            alt="orange-cut">
+                    </div>
+                    <div class="card bg-white h-[450px] rounded-2xl">
+                        <div class="content h-full py-10 flex flex-col justify-end items-center gap-y-4">
+                            <h3 class="text-4xl font-extrabold">Fanta</h3>
+                            <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
+                                class="inline-block rounded-lg font-bold bg-warning px-6 pb-2 pt-2.5 text-xs uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30  ">
+                                BuyNow
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card relative bg-white h-[450px] rounded-2xl">
+                        <div class="content h-full py-10 flex flex-col justify-end items-center gap-y-4">
+                            <h3 class="text-4xl font-extrabold">CocaCola</h3>
+                            <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
+                                class="inline-block rounded-lg font-bold bg-warning px-6 pb-2 pt-2.5 text-xs uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-warning-accent-300 hover:shadow-warning-2 focus:bg-warning-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-warning-600 active:shadow-warning-2 motion-reduce:transition-none dark:shadow-black/30  ">
+                                BuyNow
+                            </button>
+                        </div>
+                        <img src="Assets/pepsi.png" id="pepsi" class="absolute translate-x-[50%] -translate-y-[50%] top-[26%] right-[50%] z-20 max-sm:w-[240px] w-[300px]"
+                            alt="pepsi">
+                        <img src="Assets/orange2.png" id="orange-cut-pepsi" class="absolute translate-x-[50%] -translate-y-[50%] top-[6%] right-[50%] max-sm:w-[120px] w-[240px]"
+                            alt="orange-cut">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
